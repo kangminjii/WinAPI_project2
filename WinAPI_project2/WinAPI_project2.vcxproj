@@ -133,7 +133,10 @@
     <ClInclude Include="WinAPI_project2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="20230717_메모장.cpp" />
+    <ClCompile Include="20230717_메모장.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="20230724_멀티쓰레드.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WinAPI_project2.rc" />
